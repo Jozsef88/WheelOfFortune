@@ -179,7 +179,7 @@ a:hover, .circle-edge div a:hover {
     }
   }
 
-  @media screen and (max-width: 883px) {
+  @media screen and (max-width: 726px) {
     .wrapper {
         width: 400px;
         height: 400px;
@@ -219,7 +219,47 @@ a:hover, .circle-edge div a:hover {
     }
   }
 
-  @media only screen and (orientation: landscape) and (max-height: 1300px) {
+  @media screen and (max-width: 883px) {
+    .wrapper {
+        width: 550px;
+        height: 550px;
+    }
+
+    .wrapper > a {
+        width: 550px;
+        top: 275px;
+        padding: 0 15px 0 0;
+    }
+
+    .ref a {
+        /*border: brown 1px solid;*/
+        width: 70px;
+        top: 7px;
+        font-size: .4rem;
+        font-weight: 500;
+    }
+
+    .ref {
+        /*border: brown 1px solid;*/
+        height: 550px;
+    }
+
+    .center-circle {
+        width: 100px;
+        height: 100px;
+        /*border: 1px solid tomato;*/
+        background-size: 500px;
+    }
+
+    .wrapper > a {
+        width: 550px;
+        top: 275px;
+        padding: 0 20px 0 0;
+        font-size: .6rem;
+    }
+  }
+
+  @media only screen and (orientation: landscape) and (max-height: 1008px) {
     .wrapper {
         width: 700px;
         height: 700px;
@@ -296,5 +336,85 @@ a:hover, .circle-edge div a:hover {
         top: 200px;
         padding: 0 20px 0 0;
         font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .wrapper {
+        width: 300px;
+        height: 300px;
+    }
+
+    .wrapper > a {
+        width: 300px;
+        top: 150px;
+        padding: 0 10px 0 0;
+    }
+
+    .ref a {
+        /*border: brown 1px solid;*/
+        width: 50px;
+        top: 5px;
+        font-size: .4rem;
+        font-weight: 500;
+    }
+
+    .ref {
+        /*border: brown 1px solid;*/
+        height: 300px;
+    }
+
+    .center-circle {
+        width: 60px;
+        height: 60px;
+        /*border: 1px solid tomato;*/
+        background-size: 300px;
+    }
+
+    .wrapper > a {
+        width: 300px;
+        top: 150px;
+        padding: 0 15px 0 0;
+        font-size: .3rem;
+    }
+  }
+
+  @media only screen and (orientation: landscape) and (max-height: 600px) {
+    .wrapper {
+        width: 300px;
+        height: 300px;
+    }
+
+    .wrapper > a {
+        width: 300px;
+        top: 150px;
+        padding: 0 10px 0 0;
+    }
+
+    .ref a {
+        /*border: brown 1px solid;*/
+        width: 50px;
+        top: 5px;
+        font-size: .4rem;
+        font-weight: 500;
+    }
+
+    .ref {
+        /*border: brown 1px solid;*/
+        height: 300px;
+    }
+
+    .center-circle {
+        width: 60px;
+        height: 60px;
+        /*border: 1px solid tomato;*/
+        background-size: 300px;
+    }
+
+    .wrapper > a {
+        width: 300px;
+        top: 150px;
+        padding: 0 15px 0 0;
+        font-size: .3rem;
     }
 }
