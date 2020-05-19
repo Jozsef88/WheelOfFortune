@@ -1,0 +1,413 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, .wrapper {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wrapper, .circle-edge {
+    position: absolute;
+   /* border: black 1px solid;*/
+    width: 1000px;
+    height: 1000px;
+}
+
+.wrapper .circle-edge svg {
+    z-index: -1;
+}
+
+.wrapper {
+    background: conic-gradient(#cba93d 0 calc(28 * 3.0303%), 
+                                #8ec9c3 0 calc(32 * 3.0303%),
+                                #697d24 0);
+    border-radius: 50%;
+    animation: spinning 15s linear infinite;
+}
+
+.wrapper:hover {
+    animation-play-state: paused;
+}
+
+@keyframes spinning {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+
+.circle-edge {
+    box-sizing: border-box;
+    border-radius: 50%;
+    color: white;
+    background: conic-gradient(#e97d60 calc(6 * 3.0303%), 
+                                #a57bad 0 calc(8 * 3.0303%), 
+                                #c45b2e 0 calc(12 * 3.0303%), 
+                                #c6d868 0 calc(14 * 3.0303%), 
+                                #2d6562 0 calc(16 * 3.0303%), 
+                                #5a376f 0 calc(18 * 3.0303%), 
+                                #c4383b 0 calc(21 * 3.0303%),
+                                /*#cba93d 0 calc(28 * 3.0303%), 
+                                #8ec9c3 0 calc(32 * 3.0303%),
+                                #697d24 0);*/
+                                rgba(0, 0, 0, 0) 0);
+    z-index: 40;
+}
+.circle-edge::before {
+    position: absolute;
+    content: "";
+    width: 900px;
+    height: 900px;
+    /*border: violet 2px solid;*/
+    border-radius: 50%;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+.circle-edge * {
+    position: absolute;
+}
+
+line:nth-child(2) {transform: rotate(10.909deg); transform-origin: center;}
+line:nth-child(3) {transform: rotate(calc(10.909deg * 2)); transform-origin: center;}
+line:nth-child(4) {transform: rotate(calc(10.909deg * 3)); transform-origin: center;}
+line:nth-child(5) {transform: rotate(calc(10.909deg * 4)); transform-origin: center;}
+line:nth-child(6) {transform: rotate(calc(10.909deg * 5)); transform-origin: center;}
+line:nth-child(7) {transform: rotate(calc(10.909deg * 6)); transform-origin: center;}
+line:nth-child(8) {transform: rotate(calc(10.909deg * 7)); transform-origin: center;}
+line:nth-child(9) {transform: rotate(calc(10.909deg * 8)); transform-origin: center;}
+line:nth-child(10) {transform: rotate(calc(10.909deg * 9)); transform-origin: center;}
+line:nth-child(11) {transform: rotate(calc(10.909deg * 10)); transform-origin: center;}
+line:nth-child(12) {transform: rotate(calc(10.909deg * 11)); transform-origin: center;}
+line:nth-child(13) {transform: rotate(calc(10.909deg * 12)); transform-origin: center;}
+line:nth-child(14) {transform: rotate(calc(10.909deg * 13)); transform-origin: center;}
+line:nth-child(15) {transform: rotate(calc(10.909deg * 14)); transform-origin: center;}
+line:nth-child(16) {transform: rotate(calc(10.909deg * 15)); transform-origin: center;}
+line:nth-child(17) {transform: rotate(calc(10.909deg * 16)); transform-origin: center;}
+line:nth-child(18) {transform: rotate(calc(10.909deg * 17)); transform-origin: center;}
+line:nth-child(19) {transform: rotate(calc(10.909deg * 18)); transform-origin: center;}
+line:nth-child(20) {transform: rotate(calc(10.909deg * 19)); transform-origin: center;}
+line:nth-child(21) {transform: rotate(calc(10.909deg * 20)); transform-origin: center;}
+line:nth-child(22) {transform: rotate(calc(10.909deg * 21)); transform-origin: center;}
+line:nth-child(23) {transform: rotate(calc(10.909deg * 22)); transform-origin: center;}
+line:nth-child(24) {transform: rotate(calc(10.909deg * 23)); transform-origin: center;}
+line:nth-child(25) {transform: rotate(calc(10.909deg * 24)); transform-origin: center;}
+line:nth-child(26) {transform: rotate(calc(10.909deg * 25)); transform-origin: center;}
+line:nth-child(27) {transform: rotate(calc(10.909deg * 26)); transform-origin: center;}
+line:nth-child(28) {transform: rotate(calc(10.909deg * 27)); transform-origin: center;}
+line:nth-child(29) {transform: rotate(calc(10.909deg * 28)); transform-origin: center;}
+line:nth-child(30) {transform: rotate(calc(10.909deg * 29)); transform-origin: center;}
+line:nth-child(31) {transform: rotate(calc(10.909deg * 30)); transform-origin: center;}
+line:nth-child(32) {transform: rotate(calc(10.909deg * 31)); transform-origin: center;}
+line:nth-child(33) {transform: rotate(calc(10.909deg * 32)); transform-origin: center;}
+
+.circle-edge > div {
+    padding: 15px 0 985px 0;
+    width: 0px;
+    /*border: red 1px solid;*/
+    text-align: center;
+    left: 50%;
+    margin-left: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    z-index: 99;
+}
+
+.plus {transform: rotate(-5.4545deg);}
+.advisory {transform: rotate(calc(10.909deg * 3));}
+.built-environment {transform: rotate(calc(10.909deg * 7));}
+.energy {transform: rotate(calc(10.909deg * 10));}
+.manufacturing {transform: rotate(calc(10.909deg * 13));}
+.petrochemical {transform: rotate(calc(10.909deg * 15));}
+.resournces {transform: rotate(calc(10.909deg * 17));}
+.digital {transform: rotate(calc(10.909deg * 19.5));}
+.transport {transform: rotate(calc(10.909deg * 24.5));}
+.water {transform: rotate(calc(10.909deg * 30));}
+
+.circle-edge > a {
+    width: 450px;
+    left: 500px;
+    text-align: right;
+   /* border: 1px red solid;*/
+    transform-origin: left;
+    top: 490px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: black;
+}
+
+.circle-edge > div a {
+    transform: translateX(-50%);
+    /*border: 1px black solid;*/
+    z-index: 101;
+    padding: 0 40px 10px 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.aa {transform: rotate(calc(275.4545deg));}
+.ba {transform: rotate(calc(275.4545deg + (10.909deg * 1)));}
+.bb {transform: rotate(calc(275.4545deg + (10.909deg * 2)));}
+.bc {transform: rotate(calc(275.4545deg + (10.909deg * 3)));}
+.bd {transform: rotate(calc(275.4545deg + (10.909deg * 4)));}
+.be {transform: rotate(calc(275.4545deg + (10.909deg * 5)));}
+.bf {transform: rotate(calc(275.4545deg + (10.909deg * 6)));}
+.ca {transform: rotate(calc(275.4545deg + (10.909deg * 7)));}
+.cb {transform: rotate(calc(275.4545deg + (10.909deg * 8)));}
+.da {transform: rotate(calc(275.4545deg + (10.909deg * 9)));}
+.db {transform: rotate(calc(275.4545deg + (10.909deg * 10)));}
+.dc {transform: rotate(calc(275.4545deg + (10.909deg * 11)));}
+.dd {transform: rotate(calc(275.4545deg + (10.909deg * 12)));}
+.ea {transform: rotate(calc(275.4545deg + (10.909deg * 13)));}
+.eb {transform: rotate(calc(275.4545deg + (10.909deg * 14)));}
+.fa {transform: rotate(calc(275.4545deg + (10.909deg * 15)));}
+.fb {transform: rotate(calc(275.4545deg + (10.909deg * 16)));}
+.ga {transform: rotate(calc(275.4545deg + (10.909deg * 17)));}
+.gb {transform: rotate(calc(275.4545deg + (10.909deg * 18)));}
+.ha {transform: rotate(calc(275.4545deg + (10.909deg * 19)));}
+.hb {transform: rotate(calc(275.4545deg + (10.909deg * 20)));}
+.hc {transform: rotate(calc(275.4545deg + (10.909deg * 21)));}
+.ia {transform: rotate(calc(275.4545deg + (10.909deg * 22)));}
+.ib {transform: rotate(calc(275.4545deg + (10.909deg * 23)));}
+.ic {transform: rotate(calc(275.4545deg + (10.909deg * 24)));}
+.id {transform: rotate(calc(275.4545deg + (10.909deg * 25)));}
+.ie {transform: rotate(calc(275.4545deg + (10.909deg * 26)));}
+.if {transform: rotate(calc(275.4545deg + (10.909deg * 27)));}
+.ig {transform: rotate(calc(275.4545deg + (10.909deg * 28)));}
+.ja {transform: rotate(calc(275.4545deg + (10.909deg * 29)));}
+.jb {transform: rotate(calc(275.4545deg + (10.909deg * 30)));}
+.jc {transform: rotate(calc(275.4545deg + (10.909deg * 31)));}
+.jd {transform: rotate(calc(275.4545deg + (10.909deg * 32)));}
+
+.center-circle {
+    margin: 0;
+    padding: 0;
+    background: white;
+    text-align: center;
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    z-index: 50;
+}
+
+.in-circle {
+    color: black;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    padding: 5px;
+    padding: 10px;
+    z-index: 1500;
+}
+
+a{
+    z-index: 1000;
+}
+
+a:hover, .circle-edge div a:hover {
+    color: red;
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper, .circle-edge {
+        width: 700px;
+        height: 700px;
+    }
+
+    .circle-edge > a {
+        width: 300px;
+        left: 350px;
+        top: 340px;
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .circle-edge::before {
+        width: 640px;
+        height: 640px;
+    }
+
+    .circle-edge > div a {
+       /* border: 1px black solid;*/
+        padding: 0 10px 5px 10px;
+    }
+
+    .circle-edge > div {
+        padding: 5px 0 690px 0;
+        width: 0px;
+        /*border: red 1px solid;*/
+        margin-left: 0px;
+        font-weight: 400;
+        font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .wrapper, .circle-edge {
+        width: 500px;
+        height: 500px;
+    }
+
+    .circle-edge > a {
+        width: 230px;
+        left: 250px;
+        top: 245px;
+        font-weight: 200;
+        font-size: 7px;
+    }
+
+    .circle-edge::before {
+        width: 460px;
+        height: 460px;
+    }
+
+    .circle-edge > div a {
+       /* border: 1px black solid;*/
+        padding: 0 4px 0 10px;
+    }
+
+    .circle-edge > div {
+        padding: 2px 0 492px 0;
+        width: 0px;
+        /*border: red 1px solid;*/
+        margin-left: 0px;
+        font-weight: 200;
+        font-size: 7px;
+    }
+
+    .center-circle {
+        width: 150px;
+        height: 150px;
+        font-size: .8rem;
+        font-weight: 500;
+    }
+
+    .in-circle {
+        border-top: black 1px solid;
+        border-bottom: black 1px solid;
+        padding: 3px;
+        padding: 8px;
+        z-index: 1500;
+    }
+  }
+
+  @media only screen and (orientation: landscape) and (max-height: 1023px) {
+    .wrapper, .circle-edge {
+        width: 380px;
+        height: 380px;
+    }
+
+    .circle-edge > a {
+        width: 175px;
+        left: 190px;
+        top: 185px;
+        font-weight: 200;
+        font-size: 6px;
+    }
+
+    .circle-edge::before {
+        width: 350px;
+        height: 350px;
+    }
+
+    .circle-edge > div a {
+       /* border: 1px black solid;*/
+        padding: 0 1px 0 10px;
+    }
+
+    .circle-edge > div {
+        padding: 5px 0 370px 0;
+        width: 0px;
+       /* border: red 1px solid;*/
+        margin-left: 0px;
+        font-weight: 200;
+        font-size: 6px;
+    }
+
+    .center-circle {
+        width: 130px;
+        height: 130px;
+        font-size: .8rem;
+        font-weight: 500;
+    }
+
+    .in-circle {
+        border-top: black 1px solid;
+        border-bottom: black 1px solid;
+        padding: 3px;
+        padding: 4px;
+        z-index: 1500;
+    }
+  }
+
+  @media only screen and (orientation: landscape) and (max-height: 600px) {
+    .wrapper, .circle-edge {
+        width: 300px;
+        height: 300px;
+    }
+
+    .circle-edge > a {
+        width: 140px;
+        left: 150px;
+        top: 146px;
+        font-weight: 200;
+        font-size: 6px;
+    }
+
+    .circle-edge::before {
+        width: 280px;
+        height: 280px;
+    }
+
+    .circle-edge > div a {
+       /* border: 1px black solid;*/
+        padding: 0 1px 0 10px;
+    }
+
+    .circle-edge > div {
+        padding: 1px 0 295px 0;
+        width: 0px;
+        /*border: red 1px solid;*/
+        margin-left: 0px;
+        font-weight: 200;
+        font-size: 4px;
+    }
+
+    .center-circle {
+        width: 80px;
+        height: 80px;
+        font-size: .5rem;
+        font-weight: 500;
+    }
+
+    .in-circle {
+        border-top: black 1px solid;
+        border-bottom: black 1px solid;
+        padding: 3px;
+        padding: 4px;
+        z-index: 1500;
+    }
+  }
