@@ -26,7 +26,7 @@ body {
     background: url(./wheel.png) no-repeat center center;
     background-size: contain;
     border-radius: 50%;
-    animation: spinning 15s linear infinite;
+   /* animation: spinning 15s linear infinite; */
 }
 
 .ref {
@@ -53,10 +53,11 @@ body {
 
 .wrapper > a {
     width: 1000px;
-    height: 0;
-    top: 500px;
+    height: 10px;
+    top: 490px;
     padding: 0 50px 0 0;
     text-align: right;
+    font-size: 1rem;
     text-transform: capitalize;
     text-decoration: none;
     color: black;
@@ -147,8 +148,9 @@ a:hover, .circle-edge div a:hover {
 
     .wrapper > a {
         width: 700px;
-        top: 350px;
+        top: 345px;
         padding: 0 30px 0 0;
+        font-size: .75rem;
     }
 
     .ref a {
@@ -169,13 +171,6 @@ a:hover, .circle-edge div a:hover {
         height: 140px;
         /*border: 1px solid tomato;*/
         background-size: 700px;
-    }
-
-    .wrapper > a {
-        width: 700px;
-        top: 350px;
-        padding: 0 35px 0 0;
-        font-size: .7rem;
     }
   }
 
@@ -227,8 +222,9 @@ a:hover, .circle-edge div a:hover {
 
     .wrapper > a {
         width: 550px;
-        top: 275px;
-        padding: 0 15px 0 0;
+        top: 270px;
+        padding: 0 25px 0 0;
+        font-size: .55rem;
     }
 
     .ref a {
@@ -249,13 +245,6 @@ a:hover, .circle-edge div a:hover {
         height: 100px;
         /*border: 1px solid tomato;*/
         background-size: 500px;
-    }
-
-    .wrapper > a {
-        width: 550px;
-        top: 275px;
-        padding: 0 20px 0 0;
-        font-size: .6rem;
     }
   }
 
@@ -301,14 +290,15 @@ a:hover, .circle-edge div a:hover {
 
   @media only screen and (orientation: landscape) and (max-height: 920px) {
     .wrapper {
-        width: 400px;
-        height: 400px;
+        width: 550px;
+        height: 550px;
     }
 
     .wrapper > a {
-        width: 400px;
-        top: 200px;
-        padding: 0 15px 0 0;
+        width: 550px;
+        top: 270px;
+        padding: 0 25px 0 0;
+        font-size: .55rem;
     }
 
     .ref a {
@@ -321,7 +311,7 @@ a:hover, .circle-edge div a:hover {
 
     .ref {
         /*border: brown 1px solid;*/
-        height: 400px;
+        height: 550px;
     }
 
     .center-circle {
@@ -330,16 +320,9 @@ a:hover, .circle-edge div a:hover {
         /*border: 1px solid tomato;*/
         background-size: 500px;
     }
+  }
 
-    .wrapper > a {
-        width: 400px;
-        top: 200px;
-        padding: 0 20px 0 0;
-        font-size: .5rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     .wrapper {
         width: 300px;
         height: 300px;
@@ -347,15 +330,16 @@ a:hover, .circle-edge div a:hover {
 
     .wrapper > a {
         width: 300px;
-        top: 150px;
-        padding: 0 10px 0 0;
+        top: 146px;
+        padding: 0 16px 0 0;
+        font-size: .2rem;
     }
 
     .ref a {
         /*border: brown 1px solid;*/
         width: 50px;
         top: 5px;
-        font-size: .4rem;
+        font-size: .2rem;
         font-weight: 500;
     }
 
@@ -368,16 +352,9 @@ a:hover, .circle-edge div a:hover {
         width: 60px;
         height: 60px;
         /*border: 1px solid tomato;*/
-        background-size: 300px;
+        background: white;
     }
-
-    .wrapper > a {
-        width: 300px;
-        top: 150px;
-        padding: 0 15px 0 0;
-        font-size: .3rem;
-    }
-  }
+}
 
   @media only screen and (orientation: landscape) and (max-height: 600px) {
     .wrapper {
@@ -387,15 +364,16 @@ a:hover, .circle-edge div a:hover {
 
     .wrapper > a {
         width: 300px;
-        top: 150px;
-        padding: 0 10px 0 0;
+        top: 146px;
+        padding: 0 16px 0 0;
+        font-size: .2rem;
     }
 
     .ref a {
         /*border: brown 1px solid;*/
         width: 50px;
         top: 5px;
-        font-size: .4rem;
+        font-size: .2rem;
         font-weight: 500;
     }
 
@@ -408,13 +386,6 @@ a:hover, .circle-edge div a:hover {
         width: 60px;
         height: 60px;
         /*border: 1px solid tomato;*/
-        background-size: 300px;
-    }
-
-    .wrapper > a {
-        width: 300px;
-        top: 150px;
-        padding: 0 15px 0 0;
-        font-size: .3rem;
+        background: white;
     }
 }
