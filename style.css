@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body {
@@ -13,58 +17,56 @@ html, body {
 body {
     position: relative;
     display: flex;
-    box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+}
+
+#Layer_1 a:hover {
+    font-weight: 1000;
 }
 
 .wrapper {
     position: relative;
-    width: 1000px;
-    height: 1000px;
-    background: url(./wheel.png) no-repeat center center;
-    background-size: contain;
+    width: 85vh;
+    height: 85vh;
     border-radius: 50%;
-   /* animation: spinning 15s linear infinite; */
+    z-index: 10;
+    animation: spinning 50s linear infinite;
 }
 
-.ref {
-    /*border: brown 1px solid;*/
-    width: 0;
-    height: 1000px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%)
-}
-
-.ref a {
-    /*border: brown 1px solid;*/
-    transform: translateX(-50%);
-    width: 200px;
-    top: 12px;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-}
-
-.wrapper > a {
-    width: 1000px;
-    height: 10px;
-    top: 490px;
-    padding: 0 50px 0 0;
-    text-align: right;
-    font-size: 1rem;
-    text-transform: capitalize;
-    text-decoration: none;
-    color: black;
-}
-
-.wrapper * {
+.wrapper2 {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    background: #efeee9;
+    z-index: 100;
+    font-size: 2vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper2:before {
+    content: "";
+    position: absolute;
+    width: 15vh;
+    height: 15vh;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+}
+
+.wrapper2 p:nth-child(2) {
+    font-size: 4.5vh;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 300;
+    margin-top: -5px;
+}
+
+svg {
+    margin-left: -10px;
 }
 
 .wrapper:hover {
@@ -76,316 +78,25 @@ body {
     to {transform: rotate(360deg);}
   }
 
-.plus {transform: rotate(-5.4545deg);}
-.advisory {transform: rotate(calc(10.909deg * 3));}
-.built-environment {transform: rotate(calc(10.909deg * 7));}
-.energy {transform: rotate(calc(10.909deg * 10));}
-.manufacturing {transform: rotate(calc(10.909deg * 13));}
-.petrochemical {transform: rotate(calc(10.909deg * 15));}
-.resournces {transform: rotate(calc(10.909deg * 17));}
-.digital {transform: rotate(calc(10.909deg * 19.5));}
-.transport {transform: rotate(calc(10.909deg * 24.5));}
-.water {transform: rotate(calc(10.909deg * 30));}
-
-.aa {transform: rotate(calc(274deg));}
-.ba {transform: rotate(calc(274deg + (10.909deg * 1)));}
-.bb {transform: rotate(calc(274deg + (10.909deg * 2)));}
-.bc {transform: rotate(calc(274deg + (10.909deg * 3)));}
-.bd {transform: rotate(calc(274deg + (10.909deg * 4)));}
-.be {transform: rotate(calc(274deg + (10.909deg * 5)));}
-.bf {transform: rotate(calc(274deg + (10.909deg * 6)));}
-.ca {transform: rotate(calc(274deg + (10.909deg * 7)));}
-.cb {transform: rotate(calc(274deg + (10.909deg * 8)));}
-.da {transform: rotate(calc(274deg + (10.909deg * 9)));}
-.db {transform: rotate(calc(274deg + (10.909deg * 10)));}
-.dc {transform: rotate(calc(274deg + (10.909deg * 11)));}
-.dd {transform: rotate(calc(274deg + (10.909deg * 12)));}
-.ea {transform: rotate(calc(274deg + (10.909deg * 13)));}
-.eb {transform: rotate(calc(274deg + (10.909deg * 14)));}
-.fa {transform: rotate(calc(274deg + (10.909deg * 15)));}
-.fb {transform: rotate(calc(274deg + (10.909deg * 16)));}
-.ga {transform: rotate(calc(274deg + (10.909deg * 17)));}
-.gb {transform: rotate(calc(274deg + (10.909deg * 18)));}
-.ha {transform: rotate(calc(274deg + (10.909deg * 19)));}
-.hb {transform: rotate(calc(274deg + (10.909deg * 20)));}
-.hc {transform: rotate(calc(274deg + (10.909deg * 21)));}
-.ia {transform: rotate(calc(274deg + (10.909deg * 22)));}
-.ib {transform: rotate(calc(274deg + (10.909deg * 23)));}
-.ic {transform: rotate(calc(274deg + (10.909deg * 24)));}
-.id {transform: rotate(calc(274deg + (10.909deg * 25)));}
-.ie {transform: rotate(calc(274deg + (10.909deg * 26)));}
-.if {transform: rotate(calc(274deg + (10.909deg * 27)));}
-.ig {transform: rotate(calc(274deg + (10.909deg * 28)));}
-.ja {transform: rotate(calc(274deg + (10.909deg * 29)));}
-.jb {transform: rotate(calc(274deg + (10.909deg * 30)));}
-.jc {transform: rotate(calc(274deg + (10.909deg * 31)));}
-.jd {transform: rotate(calc(274deg + (10.909deg * 32)));}
-
-.center-circle {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    /*border: 1px solid tomato;*/
-    background: url(./wheel.png) no-repeat center center;
-    background-size: 1000px;
-    position: absolute;
-    z-index: 50;
-}
-
-a{
-    z-index: 1000;
-}
-
-a:hover, .circle-edge div a:hover {
-    color: red;
-}
-
-@media screen and (max-width: 1100px) {
+  @media (orientation: portrait) {
     .wrapper {
-        width: 700px;
-        height: 700px;
+        width: 100vw;
+        height: 100vw;
     }
-
-    .wrapper > a {
-        width: 700px;
-        top: 345px;
-        padding: 0 30px 0 0;
-        font-size: .75rem;
+    .wrapper2 {
+        width: 25vw;
+        height: 25vw;
+        font-size: 2vw;
     }
-
-    .ref a {
-        /*border: brown 1px solid;*/
-        width: 100px;
-        top: 10px;
-        font-size: .6rem;
-        font-weight: 500;
+    .wrapper2 p:nth-child(2) {
+        font-size: 4.5vw;
     }
-
-    .ref {
-        /*border: brown 1px solid;*/
-        height: 700px;
-    }
-
-    .center-circle {
-        width: 140px;
-        height: 140px;
-        /*border: 1px solid tomato;*/
-        background-size: 700px;
+    .wrapper2:before {
+        content: "";
+        position: absolute;
+        width: 15vw;
+        height: 15vw;
+        border-top: 2px black solid;
+        border-bottom: 2px black solid;
     }
   }
-
-  @media screen and (max-width: 726px) {
-    .wrapper {
-        width: 400px;
-        height: 400px;
-    }
-
-    .wrapper > a {
-        width: 400px;
-        top: 200px;
-        padding: 0 15px 0 0;
-    }
-
-    .ref a {
-        /*border: brown 1px solid;*/
-        width: 70px;
-        top: 7px;
-        font-size: .4rem;
-        font-weight: 500;
-    }
-
-    .ref {
-        /*border: brown 1px solid;*/
-        height: 400px;
-    }
-
-    .center-circle {
-        width: 100px;
-        height: 100px;
-        /*border: 1px solid tomato;*/
-        background-size: 500px;
-    }
-
-    .wrapper > a {
-        width: 400px;
-        top: 200px;
-        padding: 0 20px 0 0;
-        font-size: .5rem;
-    }
-  }
-
-  @media screen and (max-width: 883px) {
-    .wrapper {
-        width: 550px;
-        height: 550px;
-    }
-
-    .wrapper > a {
-        width: 550px;
-        top: 270px;
-        padding: 0 25px 0 0;
-        font-size: .55rem;
-    }
-
-    .ref a {
-        /*border: brown 1px solid;*/
-        width: 70px;
-        top: 7px;
-        font-size: .4rem;
-        font-weight: 500;
-    }
-
-    .ref {
-        /*border: brown 1px solid;*/
-        height: 550px;
-    }
-
-    .center-circle {
-        width: 100px;
-        height: 100px;
-        /*border: 1px solid tomato;*/
-        background-size: 500px;
-    }
-  }
-
-  @media only screen and (orientation: landscape) and (max-height: 1008px) {
-    .wrapper {
-        width: 700px;
-        height: 700px;
-    }
-
-    .wrapper > a {
-        width: 700px;
-        top: 350px;
-        padding: 0 30px 0 0;
-    }
-
-    .ref a {
-        /*border: brown 1px solid;*/
-        width: 100px;
-        top: 10px;
-        font-size: .6rem;
-        font-weight: 500;
-    }
-
-    .ref {
-        /*border: brown 1px solid;*/
-        height: 700px;
-    }
-
-    .center-circle {
-        width: 140px;
-        height: 140px;
-        /*border: 1px solid tomato;*/
-        background-size: 700px;
-    }
-
-    .wrapper > a {
-        width: 700px;
-        top: 350px;
-        padding: 0 35px 0 0;
-        font-size: .7rem;
-    }
-  }
-
-  @media only screen and (orientation: landscape) and (max-height: 920px) {
-    .wrapper {
-        width: 550px;
-        height: 550px;
-    }
-
-    .wrapper > a {
-        width: 550px;
-        top: 270px;
-        padding: 0 25px 0 0;
-        font-size: .55rem;
-    }
-
-    .ref a {
-        /*border: brown 1px solid;*/
-        width: 70px;
-        top: 7px;
-        font-size: .4rem;
-        font-weight: 500;
-    }
-
-    .ref {
-        /*border: brown 1px solid;*/
-        height: 550px;
-    }
-
-    .center-circle {
-        width: 100px;
-        height: 100px;
-        /*border: 1px solid tomato;*/
-        background-size: 500px;
-    }
-  }
-
-  @media only screen and (max-width: 600px) {
-    .wrapper {
-        width: 300px;
-        height: 300px;
-    }
-
-    .wrapper > a {
-        width: 300px;
-        top: 146px;
-        padding: 0 16px 0 0;
-        font-size: .2rem;
-    }
-
-    .ref a {
-        /*border: brown 1px solid;*/
-        width: 50px;
-        top: 5px;
-        font-size: .2rem;
-        font-weight: 500;
-    }
-
-    .ref {
-        /*border: brown 1px solid;*/
-        height: 300px;
-    }
-
-    .center-circle {
-        width: 60px;
-        height: 60px;
-        /*border: 1px solid tomato;*/
-        background: white;
-    }
-}
-
-  @media only screen and (orientation: landscape) and (max-height: 600px) {
-    .wrapper {
-        width: 300px;
-        height: 300px;
-    }
-
-    .wrapper > a {
-        width: 300px;
-        top: 146px;
-        padding: 0 16px 0 0;
-        font-size: .2rem;
-    }
-
-    .ref a {
-        /*border: brown 1px solid;*/
-        width: 50px;
-        top: 5px;
-        font-size: .2rem;
-        font-weight: 500;
-    }
-
-    .ref {
-        /*border: brown 1px solid;*/
-        height: 300px;
-    }
-
-    .center-circle {
-        width: 60px;
-        height: 60px;
-        /*border: 1px solid tomato;*/
-        background: white;
-    }
-}
